@@ -1,4 +1,4 @@
-// java test.java
+// java test.java or just run java ( top right corner lol )
 
 package yeet;
 
