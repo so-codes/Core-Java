@@ -2,7 +2,7 @@
 
 class yeet {
     public static void main(String[] args){
-        String x = "Criz";
+        String x = "meme";
         System.out.println(x);
     }
 }
