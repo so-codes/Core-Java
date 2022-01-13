@@ -1,3 +1,4 @@
+package yeet;
 // java [Package].[ClassName]
 
 class yeet {
