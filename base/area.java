@@ -3,10 +3,8 @@ package base;
 public class area {
     public static void main(String[] args) {
 
-        int l = 10, b = 5 , area;
+        int l = 10, b = 5 , area = l * b;
         System.out.println("\nArea of a rectangle when lengeth is "+ l +" and breadth is "+ b);
-
-        area = l * b;
 
         System.out.println("\nArea of a rectangle is " + area);
 
