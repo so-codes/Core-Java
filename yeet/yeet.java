@@ -1,5 +1,5 @@
 package yeet;
-// java [Package].[ClassName]
+// java [Package].[ClassName].java
 
 class yeet {
     public static void main(String[] args){
