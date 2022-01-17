@@ -1,4 +1,4 @@
-package base.basics;
+package base.conditions;
 import java.util.*;
 
 public class div_5 {

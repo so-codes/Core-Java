@@ -1,20 +1,19 @@
-package base.basics;
+package base.conditions;
 import java.util.*; 
 
-public class even_odd {
+public class pos_neg {
     public static void main(String[] args) throws Exception{
 
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Enter number:- ");
+            System.out.print("Enter number: ");
             int num = sc.nextInt(); 
 
-            if(num % 2 == 0){
-                System.out.println("Even");
+            if(num >= 0){
+                System.out.println("Positive");
             }
             else {
-                System.out.println("Odd");
+                System.out.println("Negative");
             }
         }
     }
 }
-
