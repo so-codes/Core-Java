@@ -1,4 +1,4 @@
-package base;
+package base.basics;
 
 public class area {
     public static void main(String[] args) {

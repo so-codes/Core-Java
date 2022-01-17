@@ -1,4 +1,4 @@
-package base;
+package base.basics;
 import java.util.*;
 
 public class max {
@@ -6,7 +6,7 @@ public class max {
 
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("\nEnter two numbers: ");
-            
+
             int num1 = sc.nextInt();
             int num2 = sc.nextInt();
 

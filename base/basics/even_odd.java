@@ -1,4 +1,4 @@
-package base;
+package base.basics;
 import java.util.*; 
 
 public class even_odd {
