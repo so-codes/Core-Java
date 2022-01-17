@@ -11,9 +11,6 @@ public class div_5_3 {
             if (num % 3 == 0 && num % 5 == 0){
                 System.out.println("Number is divisible by 3 & 5 both");
             }
-            else if (num % 3 != 0 && num % 5 != 0){
-                System.out.println("Number is divisible by 3 & 5");
-            }
             else if (num % 3 == 0){
                 System.out.println("Number is divisible by 3");
             }
