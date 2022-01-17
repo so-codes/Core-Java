@@ -8,11 +8,14 @@ public class pos_neg {
             System.out.print("Enter number: ");
             int num = sc.nextInt(); 
 
-            if(num >= 0){
+            if(num > 0){
                 System.out.println("Positive");
             }
-            else {
+            else if (num < 0){
                 System.out.println("Negative");
+            }
+            else {
+                System.out.println("It's 0 mate");
             }
         }
     }
