@@ -5,14 +5,16 @@ public class condition {
 
         int a = 30 , b = 20;
 
-        String result = (a > b)?a + "A is max":"B is max";
+        // String result = (a > b)?a + "A is max":"B is max";   // conditional operator
 
-        System.out.println(result);
+        String poggers = (a > 0)?a + " is positive":a + " is negative";
 
-        if(a>b){
+        System.out.println(poggers);
+
+        if(a > b){
             System.out.println("a is max");
         }
-        else if(b>a){
+        else if(b > a){
             System.out.println("b is max");
         }
         else{
