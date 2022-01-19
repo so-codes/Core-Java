@@ -40,7 +40,7 @@ public class vowel {
                     break;
 
                 default:
-                    System.out.println(ch + " is not a vowel");
+                    System.out.print(ch + " is not a vowel\n");
                     break;
             }
         }
