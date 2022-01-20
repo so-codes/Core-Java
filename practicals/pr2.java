@@ -6,9 +6,21 @@ public class pr2 {
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)){
             System.out.print("\nEnter name:");
-            String str = sc.nextLine().toLowerCase();
-            System.out.println("Name: "+str);
+            String str = sc.nextLine();
 
+            int cr = 1;
+            int cr1 = 2;
+            if(cr < cr1){
+                String pog = "aryan";
+
+                if(str.equalsIgnoreCase(pog)){
+                    System.out.println("User is gay");
+                }
+                else{
+                    System.out.println("Name: "+str);
+                }
+            }
+            
             System.out.print("\nEnter gender: ");
             char x = sc.next().charAt(0);
             char f = 'F';
