@@ -26,6 +26,10 @@ public class arrbase {
             for(int i = 0;i<5;++i){
                 System.out.println("Elements at index "+ i +": "+ a[i]);
             }
+
+            for(int x:a){
+                System.out.println(" "+ x);
+            }
         }
     }
 }
