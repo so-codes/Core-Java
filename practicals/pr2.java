@@ -24,15 +24,10 @@ public class pr2 {
             System.out.print("\nEnter gender: ");
             char x = sc.next().charAt(0);
 
-            char f = 'F';
-            char m = 'M';
-            char fsmall = 'f';
-            char msmall = 'm';
-
-            if(x == f || x == fsmall){
+            if(x == 'F' || x == 'f'){
                 System.out.println("User gender is female");
             }
-            else if(x == m || x == msmall){
+            else if(x == 'M' || x == 'm'){
                 System.out.println("User gender is male");
             }
             else{
