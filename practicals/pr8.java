@@ -12,7 +12,6 @@ public class pr8 {
                   System.out.println(" "+i);
                }
             }
-      }
+         }
      }
-    
 }

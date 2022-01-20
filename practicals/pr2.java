@@ -22,6 +22,5 @@ public class pr2 {
             System.out.println("Percentage: "+b);
            
          }
-    
-}
+    }
 }

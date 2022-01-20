@@ -10,5 +10,4 @@ public class pr4 {
         System.out.println("Perimeter is = " + perimeter);
         System.out.println("Area is = " + area);
     }
-    
 }
