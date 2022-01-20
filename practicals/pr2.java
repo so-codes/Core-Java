@@ -5,13 +5,24 @@ public class pr2 {
     
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)){
-            System.out.print("\nEnter name: ");
-            String str= sc.nextLine();
+            System.out.print("\nEnter name:");
+            String str = sc.nextLine().toLowerCase();
             System.out.println("Name: "+str);
 
             System.out.print("\nEnter gender: ");
             char x = sc.next().charAt(0);
-            System.out.println("Gender: "+x);
+            char f = 'F';
+            char m = 'M';
+
+            if(x == f){
+                System.out.println("User gender is female");
+            }
+            else if(x == m){
+                System.out.println("User gender is male");
+            }
+            else{
+                System.out.println("User is gay");
+            }
 
             System.out.print("\nEnter the age: ");
             int n = sc.nextInt();
