@@ -1,5 +1,6 @@
 package practicals;
 import java.util.*;
+
 public class pr7 {
     public static void main(String[] args){
     try (Scanner sc = new Scanner(System.in)){
@@ -17,8 +18,6 @@ public class pr7 {
           x = 18 - age;
           System.out.println("Number of years left to vote: "+x);
         }
-
       }
-}
-
+    }
 }

@@ -21,7 +21,6 @@ public class pr2 {
             float b = sc.nextFloat();
             System.out.println("Percentage: "+b);
            
-         }
-    
-}
+        }
+    }
 }
