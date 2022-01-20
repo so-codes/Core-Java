@@ -9,6 +9,8 @@ public class pr5 {
         hours = sc.nextFloat(); 
         minutes = hours * 60; 
         System.out.println("There are " + minutes + " minutes in " + hours + " hours");   
-        }  
+         }  
+          
     }
+    
 }
