@@ -31,7 +31,7 @@ public class pr2 {
                 System.out.println("User gender is male");
             }
             else{
-                System.out.println("User is gay");
+                System.out.println("Invalid gender");
             }
 
             System.out.print("\nEnter the age: ");
