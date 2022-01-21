@@ -5,16 +5,17 @@ public class pr2 {
     
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)){
-            System.out.print("\nEnter name:");
-            String str = sc.nextLine();
+            System.out.print("\nEnter name: ");
+            String str = sc.nextLine().toLowerCase();
 
             int cr = 1;
             int cr1 = 2;
             if(cr < cr1){
-                String pog = "aryan";
+                String pog = "criz";
+                String pog2 = "srihari";
 
-                if(str.equalsIgnoreCase(pog)){
-                    System.out.println("User is gay");
+                if(str.equalsIgnoreCase(pog) || str.equalsIgnoreCase(pog2)){
+                    System.out.println("O.o its "+ str);
                 }
                 else{
                     System.out.println("Name: "+str);
