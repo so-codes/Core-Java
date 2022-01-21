@@ -13,7 +13,7 @@ public class pr9 {
     
         System.out.println("\nDisplay the even numbers between "+ start +" and "+ end +" are :");
 
-        for(i=start; i<=end; i++){ 
+        for(i = start; i <= end; i++){ 
             int r = i % 2; 
             if(r == 0){
                 System.out.println(i);
