@@ -7,5 +7,6 @@ public class pr3 {
         System.out.println(" |  ^  | ");
         System.out.println(" | '-' | ");
         System.out.println(" +-----+");
+        System.out.println(" +\"\"\"\"\"+ ");
     }
 }
