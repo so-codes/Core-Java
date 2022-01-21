@@ -3,12 +3,11 @@ import java.util.*;
 
 public class pr5 {
     public static void main (String[] args) {  
-        float minutes, hours;  
-        System.out.print("Enter hours: ");
+        System.out.print("\nEnter hours: ");
         try (Scanner sc = new Scanner(System.in)){  
-        hours = sc.nextFloat(); 
-        minutes = hours * 60; 
-        System.out.println("There are " + minutes + " minutes in " + hours + " hours");   
+        int hours = sc.nextInt(); 
+        int minutes = hours * 60; 
+        System.out.println("There are " + minutes + " minutes in " + hours + " hours\n");   
         }  
     }  
 }
