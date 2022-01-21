@@ -7,8 +7,10 @@ public class pr4 {
             System.out.print("\nEnter radius: ");
             int radius = sc.nextInt();
 
-            double perimeter = 2 * Math.PI * radius;
-            double area = Math.PI * radius * radius;
+            final double PI = 3.14159;
+
+            double perimeter = 2 * PI * radius;
+            double area = PI * radius * radius;
 
             System.out.println("Perimeter is = " + perimeter);
             System.out.println("Area is = " + area);
