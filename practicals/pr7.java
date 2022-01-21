@@ -10,6 +10,7 @@ public class pr7 {
         if (age >= 18 && age <= 100){
           System.out.print("\nUser is eligible to vote\n\n");
         }
+        
         else if(age > 100){
           System.out.print("\nUser is eligible to vote , Please take care !\n\n");
         }
