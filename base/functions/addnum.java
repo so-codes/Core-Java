@@ -3,35 +3,32 @@ import java.util.*;
 
 public class addnum {
     int a,b;
+    static Scanner sc = new Scanner(System.in);
     void calsum(){
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Enter two numbers: ");
+        System.out.print("Enter two numbers: ");
 
-            a = sc.nextInt();
-            b = sc.nextInt();
-            System.out.println("Ans is "+ (a + b));
-        }
+        a = sc.nextInt();
+        b = sc.nextInt();
+        System.out.println("Ans is "+ (a + b));
+        System.out.print("\n");
     }
     void calsumPara(double x , double y){
-        System.out.println("Ans is "+ (x + y));
+        System.out.println("In function: Ans is "+ (x + y));
     }
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
         addnum  A = new addnum();
         System.out.println(A.a + " and " + A.b);
         A.calsum();
 
-        try (Scanner hi = new Scanner(System.in)) {
-
             System.out.println("Enter two numbers: ");
 
-            double f = hi.nextDouble();
-            double g = hi.nextDouble();
+            double f = sc.nextDouble();
+            double g = sc.nextDouble();
 
             System.out.println("Ans is "+ (f + g));
+            System.out.print("\n");
             A.calsumPara(f, g);
-        }
-        // System.out.println("Ans is "+ (m + n));
-        // A.calsumPara(m, n);
-    }
+            System.out.print("\n");
+    }  
 }
