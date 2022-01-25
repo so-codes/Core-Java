@@ -21,7 +21,7 @@ public class addnum {
         System.out.println(A.a + " and " + A.b);
         A.calsum();
 
-            System.out.println("Enter two numbers: ");
+            System.out.print("Enter two numbers: ");
 
             double f = sc.nextDouble();
             double g = sc.nextDouble();
