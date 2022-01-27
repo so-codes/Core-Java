@@ -25,6 +25,7 @@ public class pr12 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number: ");
         num = sc.nextInt();
+        
         if (isArmstrong(num)) {
             System.out.print("Entered number is an Armstrong ");
         } else {
