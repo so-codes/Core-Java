@@ -5,10 +5,9 @@ class Account1
 {
 	int a;
 	int b;
+	Scanner sc = new Scanner(System.in);
 	void setData()
 	{
-		Scanner sc = new Scanner(System.in);
-
         System.out.print("\n\tEnter Employee Id : ");
         a = sc.nextInt();
         
