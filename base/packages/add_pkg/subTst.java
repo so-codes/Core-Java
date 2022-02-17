@@ -9,6 +9,6 @@ public class subTst {
     }
 
     public double sub() {
-        return x + y;
+        return x - y;
     }
 }
