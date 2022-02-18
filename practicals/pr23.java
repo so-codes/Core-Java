@@ -28,7 +28,6 @@ public class pr23 {
         area = (double) (3.14 * radius * radius);
 
         System.out.print("Area of circle is: " + area + "\n\n");
-
     }
 
     public static void main(String[] args) {
@@ -37,5 +36,4 @@ public class pr23 {
         obj.area_of_rectangle();
         obj.area_of_circle();
     }
-
 }
