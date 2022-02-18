@@ -3,7 +3,6 @@ package practicals;
 import java.util.Scanner;
 
 public class pr26 {
-
     public static void main(String[] args) {
 
         try (Scanner pog = new Scanner(System.in)) {
