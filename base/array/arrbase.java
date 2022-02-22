@@ -5,9 +5,9 @@ import java.util.*;
 public class arrbase {
     public static void main(String[] args) {
 
-        int age[] = { 1, 2, 3, 4, 5 };
-        age[0] = 5;
-        age[4] = 10;
+        // int age[] = { 1, 2, 3, 4, 5 };
+        // age[0] = 5;
+        // age[4] = 10;
 
         // for(int i = 0;i<5;i++){
         // System.out.println("Age at index "+ i +": "+ age[i]);
