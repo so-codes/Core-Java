@@ -3,6 +3,7 @@ package base.functions;
 class stud_info {
     int sid;
     String sname;
+
     void set_info(int sid, String sname) {
         this.sid = sid;
         this.sname = sname;
@@ -11,17 +12,20 @@ class stud_info {
 
 class marks extends stud_info {
     int m1, m2, m3;
+
     void set_marks(int m1, int m2, int m3) {
         this.m1 = m1;
         this.m2 = m2;
         this.m3 = m3;
     }
+
     void display_stud() {
         System.out.println("Student id: " + sid);
         System.out.println("Student name: " + sname);
-        System.out.println("Marks: " + m1 + " " + m2 + " " + m3);
+        System.out.println("Marks: " + m1 + " ," + m2 + " ," + m3);
     }
 }
+
 class stud_grade extends marks {
     void display() {
         int total = m1 + m2 + m3;
@@ -47,4 +51,3 @@ class ThirdMain {
         sg.display();
     }
 }
-
