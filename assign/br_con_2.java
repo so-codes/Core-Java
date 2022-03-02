@@ -1,33 +1,31 @@
 package assign;
 
-public class br_con_2 {
-    // Explain break and continue keyword with proper example.
-
-    // break keyword is used to break out of the loop.
-    // continue keyword is used to skip the current iteration of the loop.
-    // break and continue keyword is used to break out of the loop and skip the
-    // current iteration of the loop.
-
-    // break keyword in code snippet:
+class br_con_2 {
     public static void main(String[] args) {
 
-        System.out.println("Example of break keyword");
+        // break example
 
-        // break keyword in code snippet:
-        for (int i = 1; i <= 10; i++) {
+        System.out.println("\nBreak example");
+
+        // for loop
+        for (int i = 1; i <= 10; ++i) {
+
+            // if the value of i is 5 the loop terminates
             if (i == 5) {
                 break;
             }
             System.out.println(i);
         }
 
-        System.out.println("\n");
+        // continue example
 
-        System.out.println("Example of continue keyword");
+        System.out.println("\nContinue example");
 
-        // continue keyword in code snippet:
-        for (int i = 1; i <= 10; i++) {
-            if (i == 5) {
+        for (int i = 1; i <= 10; ++i) {
+
+            // if value of i is between 4 and 9
+            // continue is executed
+            if (i > 4 && i < 9) {
                 continue;
             }
             System.out.println(i);
