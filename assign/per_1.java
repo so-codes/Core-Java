@@ -1,3 +1,5 @@
+package assign;
+
 import java.util.*;
 
 public class per_1 {
