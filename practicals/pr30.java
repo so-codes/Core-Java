@@ -2,11 +2,11 @@ package practicals;
 
 import java.util.*;
 
-class number {
+class number_top {
     int num1;
     int num2;
 
-    number(int num1, int num2) {
+    number_top(int num1, int num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
@@ -16,7 +16,7 @@ class number {
     }
 }
 
-class CAdd extends number {
+class CAdd extends number_top {
     CAdd(int num1, int num2) {
         super(num1, num2);
         System.out.println("\nAddition of " + num1 + " and " + num2 + " is " + (num1 + num2));
