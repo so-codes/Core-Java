@@ -3,16 +3,8 @@ package practicals;
 import java.util.*;
 
 class student_34 {
-
-    void getdetails(String name, int id, int class1) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter student name: ");
-        name = sc.next();
-        System.out.print("Enter student id: ");
-        id = sc.nextInt();
-        System.out.print("Enter student class: ");
-        class1 = sc.nextInt();
-        sc.close();
+    void hello() {
+        System.out.println("Hello");
     }
 }
 
@@ -48,6 +40,7 @@ class Studdetails extends student_34 implements Resultstud {
     int class1;
 
     void getdetails() {
+        super.hello();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter student name: ");
         name = sc.next();
