@@ -50,7 +50,7 @@ public class bank_5 {
         try {
             bank_5 b = new bank_5();
             char ch = 'y';
-            while (ch == 'y') {
+            while (ch == 'y' || ch == 'Y') {
                 b.getData();
                 System.out.print(
                         "\nChoose an operation\n1 = Deposit\n2 = Withdraw\n3 = Show data\n------------------------------\n");
@@ -74,7 +74,6 @@ public class bank_5 {
             }
         } catch (Exception e) {
             System.out.println("Exception handled " + "\n" + e);
-
         }
     }
 
