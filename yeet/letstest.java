@@ -10,7 +10,7 @@ public class letstest {
 
             String pog = "criz";
 
-            System.out.println( str.equalsIgnoreCase(pog) + "Criz is poggers");
+            System.out.println( str.equalsIgnoreCase(pog) + " Criz is poggers");
 
         }
     }
