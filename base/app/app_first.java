@@ -17,7 +17,7 @@ public class app_first extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
-
+    
     public static void main(String[] args) {
         new app_first();
     }
