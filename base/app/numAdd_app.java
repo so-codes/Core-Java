@@ -5,8 +5,6 @@ import java.awt.event.*;
 
 public class numAdd_app extends JFrame implements ActionListener {
 
-    // ask the user for 2 numbers add them and save them in result variable and display the result and a reset button
-
     JLabel L1 , L2, L3 ;
     JTextField T1 , T2;
     JButton B1 , B2;
