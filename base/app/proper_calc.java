@@ -50,28 +50,30 @@ public class proper_calc extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 
+        double result;
+
         if (e.getSource() == B1) {
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
-            int result = num1 + num2;
-            L3.setText("Result is : " + result);
+            result = num1 + num2;
+            L3.setText("Result is : " + result % .3f);
             L3.setForeground(Color.blue);
         } else if (e.getSource() == B2) {
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
-            int result = num1 - num2;
+            result = num1 - num2;
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
         } else if (e.getSource() == B3) {
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
-            int result = num1 * num2;
+            result = num1 * num2;
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
         } else if (e.getSource() == B4) {
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
-            int result = num1 / num2;
+            result = num1 / num2;
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
         } else if (e.getSource() == B5) {
