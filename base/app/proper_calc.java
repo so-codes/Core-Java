@@ -59,7 +59,7 @@ public class proper_calc extends JFrame implements ActionListener {
 
             result = num1 + num2;
 
-            L3.setText("Result is : " + result % .3f);
+            L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
 
         } else if (e.getSource() == B2) {
