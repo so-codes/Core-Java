@@ -50,66 +50,62 @@ public class proper_calc extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 
-        double result;
+        double num1, num2;
+        float result;
 
         if (e.getSource() == B1) {
+            try {
+                num1 = Double.parseDouble(T1.getText());
+                num2 = Double.parseDouble(T2.getText());
 
-            int num1 = Integer.parseInt(T1.getText());
-            int num2 = Integer.parseInt(T2.getText());
+                result = (float) (num1 + num2);
 
-            result = num1 + num2;
+                L3.setText("Result : " + result);
 
-            L3.setText("Result is : " + result % .3f);
-            L3.setForeground(Color.blue);
-
+            } catch (Exception ex) {
+                L3.setText("Invalid Input");
+            }
         } else if (e.getSource() == B2) {
+            try {
+                num1 = Double.parseDouble(T1.getText());
+                num2 = Double.parseDouble(T2.getText());
 
-            int num1 = Integer.parseInt(T1.getText());
-            int num2 = Integer.parseInt(T2.getText());
+                result = (float) (num1 - num2);
 
-            result = num1 - num2;
+                L3.setText("Result : " + result);
 
-            L3.setText("Result is : " + result);
-            L3.setForeground(Color.blue);
-
+            } catch (Exception ex) {
+                L3.setText("Invalid Input");
+            }
         } else if (e.getSource() == B3) {
+            try {
+                num1 = Double.parseDouble(T1.getText());
+                num2 = Double.parseDouble(T2.getText());
 
-            int num1 = Integer.parseInt(T1.getText());
-            int num2 = Integer.parseInt(T2.getText());
+                result = (float) (num1 * num2);
 
-            result = num1 * num2;
+                L3.setText("Result : " + result);
 
-            L3.setText("Result is : " + result);
-            L3.setForeground(Color.blue);
-
+            } catch (Exception ex) {
+                L3.setText("Invalid Input");
+            }
         } else if (e.getSource() == B4) {
+            try {
+                num1 = Double.parseDouble(T1.getText());
+                num2 = Double.parseDouble(T2.getText());
 
-            int num1 = Integer.parseInt(T1.getText());
-            int num2 = Integer.parseInt(T2.getText());
+                result = (float) (num1 / num2);
 
-            result = num1 / num2;
+                L3.setText("Result : " + result);
 
-            L3.setText("Result is : " + result);
-            L3.setForeground(Color.blue);
-
+            } catch (Exception ex) {
+                L3.setText("Invalid Input");
+            }
         } else if (e.getSource() == B5) {
-
             T1.setText("");
             T2.setText("");
-
-            L3.setText("Values reset to 0");
-            L3.setForeground(Color.red);
-
-        } else if (e.getSource() == B5) {
-
-            T1.setText("");
-            T2.setText("");
-
-            L3.setText("Values reset to 0");
-            L3.setForeground(Color.red);
-
+            L3.setText("");
         }
-
     }
 
     public static void main(String[] args) {
