@@ -60,7 +60,14 @@ public class proper_calc extends JFrame implements ActionListener {
 
                 result = (float) (num1 + num2);
 
+<<<<<<< HEAD
                 L3.setText("Result : " + result);
+=======
+            result = num1 + num2;
+
+            L3.setText("Result is : " + result);
+            L3.setForeground(Color.blue);
+>>>>>>> 872807b2e74541039955e8670baf7fe82def8fcb
 
             } catch (Exception ex) {
                 L3.setText("Invalid Input");
