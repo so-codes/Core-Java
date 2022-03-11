@@ -59,13 +59,12 @@ public class proper_calc extends JFrame implements ActionListener {
                 num2 = Double.parseDouble(T2.getText());
 
                 result = (float) (num1 + num2);
-                L3.setText("Result : " + result);
-                result = (float) (num1 + num2);
                 L3.setText("Result is : " + result);
                 L3.setForeground(Color.blue);
 
             } catch (Exception ex) {
                 L3.setText("Invalid Input");
+                L3.setForeground(Color.red);
             }
         } else if (e.getSource() == B2) {
             try {
@@ -75,9 +74,11 @@ public class proper_calc extends JFrame implements ActionListener {
                 result = (float) (num1 - num2);
 
                 L3.setText("Result : " + result);
+                L3.setForeground(Color.blue);
 
             } catch (Exception ex) {
                 L3.setText("Invalid Input");
+                L3.setForeground(Color.red);
             }
         } else if (e.getSource() == B3) {
             try {
@@ -87,9 +88,11 @@ public class proper_calc extends JFrame implements ActionListener {
                 result = (float) (num1 * num2);
 
                 L3.setText("Result : " + result);
+                L3.setForeground(Color.blue);
 
             } catch (Exception ex) {
                 L3.setText("Invalid Input");
+                L3.setForeground(Color.red);
             }
         } else if (e.getSource() == B4) {
             try {
@@ -99,9 +102,11 @@ public class proper_calc extends JFrame implements ActionListener {
                 result = (float) (num1 / num2);
 
                 L3.setText("Result : " + result);
+                L3.setForeground(Color.blue);
 
             } catch (Exception ex) {
                 L3.setText("Invalid Input");
+                L3.setForeground(Color.red);
             }
         } else if (e.getSource() == B5) {
             T1.setText("");
