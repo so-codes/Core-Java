@@ -53,39 +53,61 @@ public class proper_calc extends JFrame implements ActionListener {
         double result;
 
         if (e.getSource() == B1) {
+
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
+
             result = num1 + num2;
+
             L3.setText("Result is : " + result % .3f);
             L3.setForeground(Color.blue);
+
         } else if (e.getSource() == B2) {
+
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
+
             result = num1 - num2;
+
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
+
         } else if (e.getSource() == B3) {
+
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
+
             result = num1 * num2;
+
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
+
         } else if (e.getSource() == B4) {
+
             int num1 = Integer.parseInt(T1.getText());
             int num2 = Integer.parseInt(T2.getText());
+
             result = num1 / num2;
+
             L3.setText("Result is : " + result);
             L3.setForeground(Color.blue);
+
         } else if (e.getSource() == B5) {
+
             T1.setText("");
             T2.setText("");
+
             L3.setText("Values reset to 0");
             L3.setForeground(Color.red);
+
         } else if (e.getSource() == B5) {
+
             T1.setText("");
             T2.setText("");
+
             L3.setText("Values reset to 0");
             L3.setForeground(Color.red);
+
         }
 
     }
