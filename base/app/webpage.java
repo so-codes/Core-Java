@@ -11,7 +11,7 @@ public class webpage extends JFrame implements ActionListener {
     JTextField T1, T2;
     JRadioButton r1, r2;
     JCheckBox c1, c2, c3, c4;
-    JComboBox cb1;
+    JComboBox<String> cb1;
     ButtonGroup bg;
     JButton B1, B2, B3, B4;
 
@@ -42,7 +42,7 @@ public class webpage extends JFrame implements ActionListener {
 
         L5 = new JLabel("Select Your Qualification: ");
         an4 = new JLabel("");
-        cb1 = new JComboBox();
+        cb1 = new JComboBox<String>();
 
         an5 = new JLabel("");
 

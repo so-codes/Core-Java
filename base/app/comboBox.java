@@ -5,16 +5,16 @@ import java.awt.*;
 import java.awt.event.*;
 
 // make a app using JComboBox
-public class comboBox extends JFrame implements ActionListener{
+public class comboBox extends JFrame implements ActionListener {
 
-    JComboBox c1;
+    JComboBox<String> c1;
     JLabel l1, l2;
 
     comboBox() {
 
         l1 = new JLabel("Select fav food: ");
         l2 = new JLabel("");
-        c1 = new JComboBox();
+        c1 = new JComboBox<String>();
 
         c1.addItem("Pizza");
         c1.addItem("Burger");
@@ -46,4 +46,3 @@ public class comboBox extends JFrame implements ActionListener{
         new comboBox();
     }
 }
-    
