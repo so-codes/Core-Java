@@ -93,7 +93,7 @@ public class webpage extends JFrame implements ActionListener {
         c3.addActionListener(this);
 
         setTitle("Criz page");
-        setSize(324, 400);
+        setSize(370, 400);
         setVisible(true);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
