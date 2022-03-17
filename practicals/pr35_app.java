@@ -12,7 +12,7 @@ public class pr35_app extends JFrame implements ActionListener {
     Font f1, f2, f3;
 
     pr35_app() {
-        l1 = new JLabel("ENTER ANY TEXT TO CHANGE IT INTO BOLD, ITALICS OR NORMAL:");
+        l1 = new JLabel("Enter any text to change it into Bold , Italics or Normal:");
         l2 = new JLabel("");
 
         t1 = new JTextField(10);
@@ -45,7 +45,7 @@ public class pr35_app extends JFrame implements ActionListener {
         setSize(500, 300);
         setVisible(true);
         setLayout(new FlowLayout());
-        setTitle("TEXT FORMATTING");
+        setTitle("Text Font");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
