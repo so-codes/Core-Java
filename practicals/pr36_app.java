@@ -11,11 +11,11 @@ public class pr36_app extends JFrame implements ActionListener {
     JTextField t1;
 
     pr36_app() {
-        l1 = new JLabel("Enter meter and convert it to centemeters :");
-
+        l1 = new JLabel("Enter meters: ");
         l2 = new JLabel("");
+
         t1 = new JTextField(10);
-        b1 = new JButton("CONVERT INTO CENTIMETRE");
+        b1 = new JButton("Convert into centimeters");
 
         add(l1);
         add(t1);
@@ -27,15 +27,15 @@ public class pr36_app extends JFrame implements ActionListener {
         setSize(400, 300);
         setVisible(true);
         setLayout(new FlowLayout());
-        setTitle("CONVERSION");
+        setTitle("Converter Thingy");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void actionPerformed(ActionEvent ae) {
-        if (ae.getSource() == b1) {
+    public void actionPerformed(ActionEvent criz) {
+        if (criz.getSource() == b1) {
             int a = Integer.parseInt(t1.getText());
             l2.setText(a * 100 + " cm");
-            // l2.setForeground(color.blue);
+            l2.setForeground(Color.blue);
         }
     }
 
