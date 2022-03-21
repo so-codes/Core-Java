@@ -18,6 +18,9 @@ public class list_app extends JFrame implements ListSelectionListener {
         
         mylist.addListSelectionListener(this);
 
+        mylist.add(l1);
+        mylist.add(l2);
+
         add(l1);
         add(mylist);
         add(l2);
