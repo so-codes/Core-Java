@@ -5,15 +5,15 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 
-public class file_app extends JFrame implements ActionListener{
+public class file_app extends JFrame implements ActionListener {
 
     JMenuBar mb;
     JMenu file;
-    JMenuItem open, colorMenu , save , exit;
+    JMenuItem open, colorMenu, save, exit;
     JTextArea ta;
 
-    file_app(){
-        
+    file_app() {
+
         open = new JMenuItem("Open");
         colorMenu = new JMenuItem("Color");
         save = new JMenuItem("Save");
@@ -50,59 +50,59 @@ public class file_app extends JFrame implements ActionListener{
 
     }
 
-    public void actionPerformed(ActionEvent e){
-        if(e.getSource() == open){
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == open) {
             JFileChooser fc = new JFileChooser();
             int i = fc.showOpenDialog(this);
             System.out.println("i = " + i);
-            if(i == JFileChooser.APPROVE_OPTION){
+            if (i == JFileChooser.APPROVE_OPTION) {
                 File f = fc.getSelectedFile();
                 String filepath = f.getPath();
 
-                try{
+                try {
                     try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
-                        String s1 = "" , s2 = "";
-                        while((s1 = br.readLine()) != null){
+                        String s1 = "", s2 = "";
+                        while ((s1 = br.readLine()) != null) {
                             s2 += s1 + "\n";
                         }
                         ta.setText(s2);
                     }
-                }catch(IOException e1){
+                } catch (IOException e1) {
                     System.out.println("Error: " + e1);
                 }
             }
         }
-        if(e.getSource() == colorMenu){
+        if (e.getSource() == colorMenu) {
             new JColorChooser();
             Color c = JColorChooser.showDialog(this, "Choose a color", Color.BLACK);
             // ta.setBackground(c);
             ta.setForeground(c);
             // ta.setSelectedTextColor(c);
         }
-        if(e.getSource() == save){
+        if (e.getSource() == save) {
             JFileChooser fc = new JFileChooser();
             int i = fc.showSaveDialog(this);
-            if(i == JFileChooser.APPROVE_OPTION){
+            if (i == JFileChooser.APPROVE_OPTION) {
                 File f = fc.getSelectedFile();
                 String filepath = f.getPath();
 
-                try{
+                try {
                     try (BufferedWriter bw = new BufferedWriter(new FileWriter(filepath))) {
                         String s1 = ta.getText();
                         bw.write(s1);
                     }
-                }catch(IOException e1){
+                } catch (IOException e1) {
                     System.out.println("Error: " + e1);
                 }
             }
         }
-        if(e.getSource() == exit){
+        if (e.getSource() == exit) {
             System.exit(0);
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         new file_app();
     }
-    
+
 }
