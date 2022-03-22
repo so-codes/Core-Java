@@ -7,14 +7,14 @@ import java.awt.*;
 public class list_app extends JFrame implements ListSelectionListener {
 
     JLabel l1 , l2;
-    JList mylist;
+    JList<String>mylist;
 
     list_app(){
         l1 = new JLabel ("Select");
         l2 = new JLabel ("");
 
         String[] sb = {"A","B","C","D","E"};
-        mylist = new JList (sb);
+        mylist = new JList<String>(sb);
         
         mylist.addListSelectionListener(this);
 
