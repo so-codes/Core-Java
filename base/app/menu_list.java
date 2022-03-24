@@ -78,12 +78,10 @@ public class menu_list extends JFrame implements ActionListener{
             Color c = JColorChooser.showDialog(this, "Choose a color", Color.BLACK);
             ta.setBackground(c);
         }
-        
         if(criz.getSource() == i3){
             System.out.println(" "+i3.getText());
             JOptionPane.showMessageDialog(this, "You selected " + i3.getText(), "Invalid input", JOptionPane.ERROR_MESSAGE);
         }
-
         if(criz.getSource() == i4){
             System.out.println(" "+i4.getText());
             JOptionPane.showOptionDialog(this, "You selected "+ i4.getText(), "Invalid input", JOptionPane.ERROR_MESSAGE, JOptionPane.DEFAULT_OPTION, null, null, null);
