@@ -115,7 +115,7 @@ public class game_of_life extends JFrame implements ActionListener {
             f_options.add(p_options);
             p_options.add(new JLabel("Number of moves per second:"));
             Integer[] secondOptions = { 1, 2, 3, 4, 5, 10, 15, 20 };
-            final JComboBox cb_seconds = new JComboBox(secondOptions);
+            final JComboBox<Integer> cb_seconds = new JComboBox<Integer>(secondOptions);
             p_options.add(cb_seconds);
             cb_seconds.setSelectedItem(i_movesPerSecond);
             cb_seconds.addActionListener(new ActionListener() {
@@ -138,7 +138,7 @@ public class game_of_life extends JFrame implements ActionListener {
             f_autoFill.add(p_autoFill);
             p_autoFill.add(new JLabel("What percentage should be filled? "));
             Object[] percentageOptions = { "Select", 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 95 };
-            final JComboBox cb_percent = new JComboBox(percentageOptions);
+            final JComboBox<Object> cb_percent = new JComboBox<Object>(percentageOptions);
             p_autoFill.add(cb_percent);
             cb_percent.addActionListener(new ActionListener() {
                 @Override
