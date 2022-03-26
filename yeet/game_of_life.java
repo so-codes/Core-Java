@@ -161,10 +161,10 @@ public class game_of_life extends JFrame implements ActionListener {
         } else if (ae.getSource().equals(mi_help_source)) {
             Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
             try {
-                desktop.browse(new URI("https://github.com/Burke9077/Conway-s-Game-of-Life"));
+                desktop.browse(new URI("https://github.com/crizmo"));
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null,
-                        "Source is available on GitHub at:\nhttps://github.com/Burke9077/Conway-s-Game-of-Life",
+                        "Well hello there !",
                         "Source", JOptionPane.INFORMATION_MESSAGE);
             }
         } else if (ae.getSource().equals(mi_help_about)) {
