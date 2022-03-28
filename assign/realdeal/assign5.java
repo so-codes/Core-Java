@@ -11,6 +11,7 @@ public class assign5 extends JFrame implements ActionListener {
     JCheckBox mango, white, oj, takeaway;
     JRadioButton none, five, ten;
 
+    ButtonGroup  bg;
     JButton calculate, clear;
 
     assign5() {
@@ -29,6 +30,11 @@ public class assign5 extends JFrame implements ActionListener {
         none = new JRadioButton("None");
         five = new JRadioButton("5%");
         ten = new JRadioButton("10%");
+       
+        // bg = new ButtonGroup();
+        // bg.add(none);
+        // bg.add(five);
+        // bg.add(ten);
 
         calculate = new JButton("Calculate");
         clear = new JButton("Clear");
