@@ -56,7 +56,7 @@ public class assign9 extends JFrame implements ActionListener {
         net.setBounds(120, 290, 100, 30);
         book.setBounds(10, 330, 100, 30);
         reset.setBounds(120, 330, 100, 30);
-        ans.setBounds(40, 370, 300, 30);
+        ans.setBounds(20, 370, 300, 30);
 
         add(select);
         add(c1);
