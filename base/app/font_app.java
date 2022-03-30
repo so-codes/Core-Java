@@ -21,9 +21,9 @@ public class font_app extends JFrame implements ActionListener {
         rb2 = new JRadioButton("Italics");
         rb3 = new JRadioButton("Plain");
 
-        f1 = new Font("Lucida Calligraphy", Font.BOLD, 13);
-        f2 = new Font("Lucida Handwriting", Font.ITALIC, 13);
-        f3 = new Font("Lucida Calligraphy", Font.PLAIN, 13);
+        f1 = new Font("Calligraphy", Font.BOLD, 13);
+        f2 = new Font("Calligraphy", Font.ITALIC, 13);
+        f3 = new Font("Calligraphy", Font.PLAIN, 13);
 
         ButtonGroup bg = new ButtonGroup();
 
@@ -62,8 +62,8 @@ public class font_app extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         new font_app();
     }
-    
+
 }
