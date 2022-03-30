@@ -4,17 +4,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-// color at least three colors, classname and three list of subjects 
-public class menu_list extends JFrame implements ActionListener{
+public class menu_list extends JFrame implements ActionListener {
 
     JButton b1;
-    JMenu m1 , m2 , d1;
-    JMenuItem i1 , i2 , i3 , i4 , i5 , i6, color;
+    JMenu m1, m2, d1;
+    JMenuItem i1, i2, i3, i4, i5, i6, color;
     JMenuBar mb;
     JLabel l1;
     JTextArea ta;
 
-    menu_list(){
+    menu_list() {
 
         m1 = new JMenu("Color");
         m2 = new JMenu("SY");
@@ -29,7 +28,7 @@ public class menu_list extends JFrame implements ActionListener{
         m1.add(i1);
         m1.add(i2);
         m1.add(color);
-        
+
         m2.add(i3);
         m2.add(i4);
 
@@ -65,31 +64,33 @@ public class menu_list extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent criz) {
 
-        if(criz.getSource() == i1){
+        if (criz.getSource() == i1) {
             // mb.setBackground(Color.red);
             ta.setBackground(Color.red);
         }
-        if(criz.getSource() == i2){
+        if (criz.getSource() == i2) {
             // mb.setBackground(Color.blue);
             ta.setBackground(Color.blue);
         }
-        if(criz.getSource() == color){
+        if (criz.getSource() == color) {
             new JColorChooser();
             Color c = JColorChooser.showDialog(this, "Choose a color", Color.BLACK);
             ta.setBackground(c);
         }
-        if(criz.getSource() == i3){
-            System.out.println(" "+i3.getText());
-            JOptionPane.showMessageDialog(this, "You selected " + i3.getText(), "Invalid input", JOptionPane.ERROR_MESSAGE);
+        if (criz.getSource() == i3) {
+            System.out.println(" " + i3.getText());
+            JOptionPane.showMessageDialog(this, "You selected " + i3.getText(), "Invalid input",
+                    JOptionPane.ERROR_MESSAGE);
         }
-        if(criz.getSource() == i4){
-            System.out.println(" "+i4.getText());
-            JOptionPane.showOptionDialog(this, "You selected "+ i4.getText(), "Invalid input", JOptionPane.ERROR_MESSAGE, JOptionPane.DEFAULT_OPTION, null, null, null);
+        if (criz.getSource() == i4) {
+            System.out.println(" " + i4.getText());
+            JOptionPane.showOptionDialog(this, "You selected " + i4.getText(), "Invalid input",
+                    JOptionPane.ERROR_MESSAGE, JOptionPane.DEFAULT_OPTION, null, null, null);
         }
     }
 
     public static void main(String[] args) {
         new menu_list();
     }
-    
+
 }
