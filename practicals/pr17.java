@@ -4,30 +4,30 @@ import java.util.Scanner;
 
 public class pr17 {
     Scanner sc = new Scanner(System.in);
-    int stud_id;
-    String stud_name;
-    double stud_per;
+    int book_id;
+    String book_name;
+    double book_per;
 
-    void insertStud() {
-        System.out.println("Enter Student ID");
-        stud_id = sc.nextInt();
-        System.out.println("Enter Student Name");
-        stud_name = sc.next();
-        System.out.println("Enter Student Perc");
-        stud_per = sc.nextDouble();
+    void insertbook() {
+        System.out.print("Enter Book ID: ");
+        book_id = sc.nextInt();
+        System.out.print("Enter Book Name: ");
+        book_name = sc.next();
+        System.out.print("Enter Book Perc: ");
+        book_per = sc.nextDouble();
     }
 
     void display() {
-        System.out.println(" Student ID " + stud_id);
-        System.out.println(" Student Name " + stud_name);
-        System.out.println(" Student perc " + stud_per);
+        System.out.println(" Book ID " + book_id);
+        System.out.println(" Book Name " + book_name);
+        System.out.println(" Book perc " + book_per);
     }
 
     public static void main(String ar[]) {
         pr17 s[] = new pr17[3];
         for (int i = 0; i < 3; i++) {
             s[i] = new pr17();
-            s[i].insertStud();
+            s[i].insertbook();
         }
         for (int i = 0; i < 3; i++) {
             s[i].display();
