@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class copy_list extends JFrame implements ActionListener {
-    JList l1, l2;
+    JList<String> l1, l2;
     JButton b1;
     String color[] = { "red", "green", "yellow", "white", "black" };
 
     copy_list() {
-        l1 = new JList(color);
-        l2 = new JList();
+        l1 = new JList<String>(color);
+        l2 = new JList<String>();
 
         l1.setVisibleRowCount(7);
         l2.setVisibleRowCount(7);
@@ -36,7 +36,8 @@ public class copy_list extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == b1) {
-            l2.setListData(l1.getSelectedValues());
+            // l2.setListData(l1.getSelectedValues());
+            // remove out <String>
         }
     }
 
