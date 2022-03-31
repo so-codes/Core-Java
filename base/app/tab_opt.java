@@ -43,10 +43,7 @@ public class tab_opt extends JFrame implements ActionListener {
         // p2.add(b3);
 
         cb = new JComboBox<String>();
-        cb.addItem("Criz");
-        cb.addItem("Criz1");
-        cb.addItem("Criz2");
-        cb.addItem("Criz3");
+        cb.addItem("Le Criz");
 
         t2 = new JTextField(10);
 
@@ -99,7 +96,7 @@ public class tab_opt extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == b2){
-            t2.setText(cb.getSelectedItem().toString());
+            cb.addItem(t2.getText());
         }
     }
 
