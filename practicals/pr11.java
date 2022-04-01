@@ -1,4 +1,5 @@
 package practicals;
+
 import java.util.*;
 
 public class pr11 {
