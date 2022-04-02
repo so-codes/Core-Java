@@ -4,34 +4,33 @@ import javax.swing.*;
 import java.awt.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-
 public class tree_app extends JFrame {
-    
-    tree_app(){
 
-            DefaultMutableTreeNode it = new DefaultMutableTreeNode("root");
-            DefaultMutableTreeNode fy = new DefaultMutableTreeNode("FY");
-            DefaultMutableTreeNode sy = new DefaultMutableTreeNode("SY");
-            DefaultMutableTreeNode child3 = new DefaultMutableTreeNode("child3");
+    tree_app() {
 
-            it.add(fy);
-            it.add(sy);
-            it.add(child3);
+        DefaultMutableTreeNode it = new DefaultMutableTreeNode("root");
+        DefaultMutableTreeNode fy = new DefaultMutableTreeNode("FY");
+        DefaultMutableTreeNode sy = new DefaultMutableTreeNode("SY");
+        DefaultMutableTreeNode child3 = new DefaultMutableTreeNode("child3");
 
-            DefaultMutableTreeNode w = new DefaultMutableTreeNode("web");
-            DefaultMutableTreeNode c = new DefaultMutableTreeNode("c++");
+        it.add(fy);
+        it.add(sy);
+        it.add(child3);
 
-            sy.add(w);
-            sy.add(c);
+        DefaultMutableTreeNode w = new DefaultMutableTreeNode("web");
+        DefaultMutableTreeNode c = new DefaultMutableTreeNode("c++");
 
-            JTree tree = new JTree(it);
-            add(new JScrollPane(tree));
+        sy.add(w);
+        sy.add(c);
 
-            setSize(400,200);
-            setVisible(true);
-            setLayout(new FlowLayout());
-            setTitle("Poggers");
-            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JTree tree = new JTree(it);
+        add(new JScrollPane(tree));
+
+        setSize(400, 200);
+        setVisible(true);
+        setLayout(new FlowLayout());
+        setTitle("JTree");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
