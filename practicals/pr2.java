@@ -12,8 +12,8 @@ public class pr2 {
             int cr = 1;
             int cr1 = 2;
             if (cr < cr1) {
-                String pog = "tejas";
-                String pog2 = "srihari";
+                String pog = "criz";
+                String pog2 = "pocky";
 
                 if (str.equalsIgnoreCase(pog) || str.equalsIgnoreCase(pog2)) {
                     System.out.println("O.o its " + str);
