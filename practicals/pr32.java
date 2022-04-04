@@ -75,7 +75,7 @@ public class pr32 {
 
         System.out.println("\n");
 
-        Fulltime f = new Fulltime("Pocky", 50000);
+        Fulltime f = new Fulltime("Hina Chan", 50000);
         f.display();
 
         System.out.println("\n");
