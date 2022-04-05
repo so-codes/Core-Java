@@ -11,7 +11,9 @@ class student_34 {
 interface Resultstud {
 
     default void GetResultstud(int sub1, int sub2, int sub3) {
+
         int total = sub1 + sub2 + sub3;
+
         if (total >= 90) {
             System.out.println("Grade is A");
         } else if (total >= 80) {
@@ -26,9 +28,11 @@ interface Resultstud {
     };
 
     default void GetStudDetails(String name, int id, int class1) {
+
         System.out.println("Student name is: " + name);
         System.out.println("Student id is: " + id);
         System.out.println("Student class is: " + class1);
+
     }
 }
 
@@ -40,6 +44,7 @@ class Studdetails extends student_34 implements Resultstud {
     int class1;
 
     void getdetails() {
+
         super.hello();
         Scanner sc = new Scanner(System.in);
 
@@ -65,6 +70,7 @@ class Studdetails extends student_34 implements Resultstud {
     }
 
     void displaystud() {
+
         int total = sub1 + sub2 + sub3;
 
         System.out.println("Total marks: " + total);
@@ -74,6 +80,7 @@ class Studdetails extends student_34 implements Resultstud {
 
         GetResultstud(sub1, sub2, sub3);
         GetStudDetails(name, id, class1);
+
     }
 }
 
