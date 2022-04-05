@@ -42,27 +42,36 @@ class Studdetails extends student_34 implements Resultstud {
     void getdetails() {
         super.hello();
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter student name: ");
         name = sc.next();
+
         System.out.print("Enter student id: ");
         id = sc.nextInt();
+
         System.out.print("Enter student class: ");
         class1 = sc.nextInt();
+
         System.out.print("Enter marks of subject 1: ");
         sub1 = sc.nextInt();
+
         System.out.print("Enter marks of subject 2: ");
         sub2 = sc.nextInt();
+
         System.out.print("Enter marks of subject 3: ");
         sub3 = sc.nextInt();
+
         sc.close();
     }
 
     void displaystud() {
         int total = sub1 + sub2 + sub3;
+
         System.out.println("Total marks: " + total);
         System.out.println("Marks of subject 1 : " + sub1);
         System.out.println("Marks of subject 2 : " + sub2);
         System.out.println("Marks of subject 3 : " + sub3);
+
         GetResultstud(sub1, sub2, sub3);
         GetStudDetails(name, id, class1);
     }
