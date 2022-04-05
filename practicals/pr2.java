@@ -6,6 +6,7 @@ public class pr2 {
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
+
             System.out.print("\nEnter name: ");
             String str = sc.nextLine().toLowerCase();
 
