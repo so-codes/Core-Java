@@ -6,8 +6,10 @@ public class pr26 {
     public static void main(String[] args) {
 
         try (Scanner pog = new Scanner(System.in)) {
+
             System.out.print("\nEnter first name: ");
             String firstName = pog.nextLine();
+
             System.out.print("\nEnter last name: ");
             String lastName = pog.nextLine();
 
