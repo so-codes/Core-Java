@@ -11,6 +11,7 @@ public class pr27 {
 
             System.out.print("Enter the number: ");
             int num = sc.nextInt();
+
             pr27 obj = new pr27(num);
             obj.display();
         }
