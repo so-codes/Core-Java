@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class pr17 {
     Scanner sc = new Scanner(System.in);
+
     int book_id;
     String book_name;
     double book_per;
@@ -11,8 +12,10 @@ public class pr17 {
     void insertbook() {
         System.out.print("Enter Book ID: ");
         book_id = sc.nextInt();
+
         System.out.print("Enter Book Name: ");
         book_name = sc.next();
+
         System.out.print("Enter Book Perc: ");
         book_per = sc.nextDouble();
     }
