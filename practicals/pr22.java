@@ -10,13 +10,17 @@ public class pr22 {
 
     public void getdata() {
         System.out.print("\n");
+
         System.out.print("Enter the size of array: ");
         num = pog.nextInt();
+
         arr = new int[num];
+
         System.out.print("Enter the numbers: ");
         for (i = 0; i < num; i++) {
             arr[i] = pog.nextInt();
         }
+
     }
 
     void putdata() {
