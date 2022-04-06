@@ -11,8 +11,12 @@ public class pr25 {
             int a = pog.nextInt();
             int b = pog.nextInt();
 
-            int max = max(a, b);
-            System.out.println("Maximum number is: " + max + "\n");
+            if (a == b) {
+                System.out.println("Both are equal");
+            } else {
+                int max = max(a, b);
+                System.out.println("Maximum number is: " + max + "\n");
+            }
         }
     }
 
