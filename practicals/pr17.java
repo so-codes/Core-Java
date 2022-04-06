@@ -28,12 +28,15 @@ public class pr17 {
 
     public static void main(String ar[]) {
         pr17 s[] = new pr17[3];
+
         for (int i = 0; i < 3; i++) {
             s[i] = new pr17();
             s[i].insertbook();
-        }
-        for (int i = 0; i < 3; i++) {
             s[i].display();
         }
+
+        // for (int i = 0; i < 3; i++) {
+        // s[i].display();
+        // }
     }
 }
