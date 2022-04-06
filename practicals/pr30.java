@@ -16,6 +16,14 @@ class number_top {
     }
 }
 
+class Cmain extends CSub {
+
+    Cmain(int num1, int num2) {
+        super(num1, num2);
+        System.out.println("Running both add and sub");
+    }
+}
+
 class CAdd extends number_top {
     CAdd(int num1, int num2) {
         super(num1, num2);
@@ -42,7 +50,8 @@ public class pr30 {
             int num2 = sc.nextInt();
 
             // new CAdd(num1, num2);
-            new CSub(num1, num2);
+            // new CSub(num1, num2);
+            new Cmain(num1, num2);
 
         }
     }
