@@ -30,7 +30,7 @@ public class pr9 {
 
                 for (i = start; i <= end; i++) {
                     int r = i % 2;
-                    if (r == 1) {
+                    if (r != 0) {
                         System.out.println(i);
                     }
                 }
