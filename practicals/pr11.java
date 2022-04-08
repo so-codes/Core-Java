@@ -3,6 +3,7 @@ package practicals;
 import java.util.*;
 
 public class pr11 {
+
     static boolean checkForPrime(int inputNumber) {
         boolean isItPrime = true;
 

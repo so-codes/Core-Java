@@ -7,6 +7,7 @@ public class pr23 {
         double base = 5, height = 10, area;
         System.out.print("\n");
         System.out.println("Base of triangle is " + base + " and height is " + height);
+
         area = (base * height) / 2;
         System.out.print("Area of triangle is: " + area + "\n");
 
@@ -16,6 +17,7 @@ public class pr23 {
         double length = 10, breadth = 5, area;
         System.out.print("\n");
         System.out.println("Length of rectangle is " + length + " and breadth is " + breadth);
+
         area = length * breadth;
         System.out.print("Area of rectangle is: " + area + "\n");
     }
@@ -25,8 +27,8 @@ public class pr23 {
         double radius = 5, area;
         System.out.print("\n");
         System.out.println("Radius of circle is " + radius);
-        area = (double) (3.14 * radius * radius);
 
+        area = (double) (3.14 * radius * radius);
         System.out.print("Area of circle is: " + area + "\n\n");
     }
 

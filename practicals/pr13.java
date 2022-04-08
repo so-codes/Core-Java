@@ -46,27 +46,27 @@ public class pr13 {
 
         System.out.println();
         System.out.println("Pattern 5");
-        int d , f ;
+        int d, f;
         int pig = 5;
         for (d = 0; d <= pig; d++) {
-            for (f = 1; f <= pig-d; f++) {
+            for (f = 1; f <= pig - d; f++) {
                 if (f % 2 == 0) {
                     System.out.print(0);
                 } else {
                     System.out.print(1);
                 }
             }
-                    System.out.println();
+            System.out.println();
         }
 
         System.out.println();
         System.out.println("Pattern 6");
-        int q, w ,t = 1;
+        int q, w, t = 1;
 
         for (q = 1; q <= 5; q++) {
             for (w = 1; w < q + 1; w++) {
                 System.out.print(t++ + " ");
-            }           
+            }
             System.out.println();
         }
 

@@ -12,8 +12,10 @@ class Emp {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter employee id: ");
         empid = sc.nextInt();
+
         System.out.print("Enter employee name: ");
         empname = sc.next();
+
         System.out.print("Enter employee mobile number: ");
         emmobilenumber = sc.nextLong();
 
@@ -70,12 +72,13 @@ public class pr32 {
         Emp e = new Emp();
         System.out.println("\n");
         e.getEmpDetails();
+
         System.out.println("\n");
         e.display();
 
         System.out.println("\n");
 
-        Fulltime f = new Fulltime("Pocky", 50000);
+        Fulltime f = new Fulltime("Hina Chan", 50000);
         f.display();
 
         System.out.println("\n");

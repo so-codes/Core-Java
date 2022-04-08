@@ -14,7 +14,7 @@ public class pr9 {
 
             int i = 0;
 
-            if (start > end) {
+            if (start >= end) {
                 System.out.println("The starting number should be smaller than the end number");
             } else {
                 System.out.println("\nDisplay the even numbers between " + start + " and " + end + " are :");
