@@ -15,8 +15,6 @@ public class copy_list extends JFrame implements ActionListener {
 
         l1.setVisibleRowCount(7);
         l2.setVisibleRowCount(7);
-        l1.setBounds(100, 200, 200, 500);
-        l2.setBounds(100, 200, 200, 500);
 
         b1 = new JButton("copy");
 
@@ -36,8 +34,8 @@ public class copy_list extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == b1) {
+            // copy list elements
             // l2.setListData(l1.getSelectedValues());
-            // remove out <String>
         }
     }
 
