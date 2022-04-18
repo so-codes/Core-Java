@@ -66,10 +66,10 @@ public class bank_functions implements ActionListener {
             f.dispose();
         }
 
-        if (criz.getSource() == b3) {
-            new balance();
-            f.dispose();
-        }
+        // if (criz.getSource() == b3) {
+        // new balance();
+        // f.dispose();
+        // }
 
         if (criz.getSource() == b4) {
             new bank_home();
