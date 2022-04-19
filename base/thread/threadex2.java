@@ -1,8 +1,9 @@
 package base.thread;
 
 class threadex2 implements Runnable {
-    
+
     Thread t;
+
     threadex2(String name) {
         t = new Thread(this, name);
         System.out.println("New thread: " + t);
@@ -10,13 +11,13 @@ class threadex2 implements Runnable {
     }
 
     public void run() {
-        for(int i = 1; i <= 2; i++) {
-            System.out.println("i = "+ i +"Thread name : " + Thread.currentThread().getName());
+        for (int i = 1; i <= 2; i++) {
+            System.out.println("i = " + i + "Thread name : " + Thread.currentThread().getName());
             try {
-                System.out.println("Now "+ Thread.currentThread().getName() + " is sleeping");
+                System.out.println("Now " + Thread.currentThread().getName() + " is sleeping");
                 Thread.sleep(1000);
                 System.out.println();
-                System.out.println("Now "+ Thread.currentThread().getName() + " is awake");
+                System.out.println("Now " + Thread.currentThread().getName() + " is awake");
                 System.out.println();
             } catch (Exception e) {
                 System.out.println(e);
