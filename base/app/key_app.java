@@ -5,7 +5,7 @@ import java.awt.event.*;
 import java.awt.*;
 
 public class key_app extends JFrame implements KeyListener {
-    // public class key_app extends KeyAdapter  -- to only handle selective events
+    // public class key_app extends KeyAdapter -- to only handle selective events
 
     JLabel l1, l2;
     JTextField t1;
@@ -19,10 +19,10 @@ public class key_app extends JFrame implements KeyListener {
         b1 = new JButton("OK");
         l2 = new JLabel("");
 
-        add(l1);   // f1.add(l1);
-        add(t1);   // f1.add(t1);
-        add(b1);   // f1.add(b1);
-        add(l2);   // f1.add(l2);
+        add(l1); // f1.add(l1);
+        add(t1); // f1.add(t1);
+        add(b1); // f1.add(b1);
+        add(l2); // f1.add(l2);
 
         setTitle("Criz page");
         setSize(400, 400);
