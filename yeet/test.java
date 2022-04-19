@@ -10,5 +10,10 @@ public class test {
             }
             System.out.println(i);
         }
+
+        String s = "hello";
+        String p = s.toUpperCase();
+
+        System.out.println(p);
     }
 }
