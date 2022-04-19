@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class borderLayout extends JFrame {
 
-    borderLayout(){
+    borderLayout() {
 
         JButton b1 = new JButton("North");
         JButton b2 = new JButton("South");
@@ -18,15 +18,15 @@ public class borderLayout extends JFrame {
         setSize(400, 400);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
         add(b1, BorderLayout.NORTH);
         add(b2, BorderLayout.SOUTH);
         add(b3, BorderLayout.EAST);
         add(b4, BorderLayout.WEST);
         add(b5, BorderLayout.CENTER);
-        
+
     }
-    
+
     public static void main(String[] args) {
         new borderLayout();
     }
