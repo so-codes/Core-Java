@@ -14,6 +14,7 @@ public class music_fo {
             public void play() {
                 System.out.println("Guitar is playing");
             }
+
             public void player() {
                 System.out.println("Guitar player");
             }
@@ -21,5 +22,5 @@ public class music_fo {
         g.play();
         g.player();
     }
-    
+
 }
